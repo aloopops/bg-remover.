@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remove Background Tool</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Gradio App Iframe -->
+  <iframe
+    src="https://abdullahalioo-remove-background.hf.space"
+  ></iframe>
+
+  <!-- WidgetBot Floating Chat -->
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new Crate({
+        server: "105202304", // your server ID
+        channel: "105202305", // your channel ID
+        shard: "https://e.widgetbot.io",
+        color: "#5865F2" // Optional: floating icon color (Discord blue)
+      });
+    });
+  </script>
+
+</body>
+</html>
